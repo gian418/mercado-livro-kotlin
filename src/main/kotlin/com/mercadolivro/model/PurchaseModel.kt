@@ -28,5 +28,5 @@ data class PurchaseModel(
     val price: BigDecimal,
 
     @Column(name = "created_at")
-    val createdAtd: LocalDateTime
+    val createdAtd: LocalDateTime = LocalDateTime.now()
 )
