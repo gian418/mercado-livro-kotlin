@@ -18,7 +18,7 @@ import javax.validation.Valid
 @RestController
 @RequestMapping("customers")
 class CostumerController(
-    val customerService: CustomerService
+    private val customerService: CustomerService
 ) {
 
     @GetMapping
